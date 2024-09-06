@@ -23,13 +23,13 @@ export default {
 export const Primary = {
   args: {
     primary: true,
-    label: 'Primary Button',
+    label: 'Primary Button!!',
   },
 };
 
 export const Secondary = {
   args: {
-    label: 'Secondary Button',
+    label: 'Secondary Button!!',
   },
 };
 
