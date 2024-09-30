@@ -1,0 +1,54 @@
+
+# ZeroHeight configuration file
+# This will be used to determine pages for block insertion
+# Update the following mappings according to your styleguide setup
+
+# Styleguide ID
+styleguideId: 92766
+
+# zeroheight mapping
+# ------------------------------------------------------------------
+# You can use string or variables for any of the fields below.
+# Currently, we support the variables {story}, {component}
+# and {category}. See https://storybook.js.org/docs/writing-stories/naming-components-and-hierarchy#structure-and-hierarchy
+# for what these variables correspond to.
+zeroheightMapping:
+
+  # Navigation (optional)
+  # ---------------------------------------------------------------
+  # The top navigation element in your zeroheight styleguide
+  # that contains the pages where Storybook content will
+  # be automatically added. For example, "UI Library". Update
+  # this to the correct name used in your styleguide.
+  navigation: "Meow"
+
+  # Category (required)
+  # ---------------------------------------------------------------
+  # The category in your zeroheight styleguide navigation
+  # where Storybook content will be automatically added.
+  # For example, "Components". Update this to the correct
+  # category used in your styleguide.
+  category: "Components"
+
+  # Subcategory (optional)
+  # ---------------------------------------------------------------
+	# The subcategory in your zeroheight styleguide navigation
+	# where Storybook content will be automatically added.
+	# ${component} dynamically matches the subcategory
+	# to the component name in Storybook. You can replace this
+	# with a specific subcategory name or leave it blank.
+  subcategory: "${component}"
+
+  # Page (required)
+  # ---------------------------------------------------------------
+  # The page in your zeroheight styleguide where Storybook
+  # content will be automatically added. ${story}
+  # dynamically matches the page to the story's name in Storybook.
+  page: "${story}"
+
+  # Tab (optional)
+  # ---------------------------------------------------------------
+  # The name of the tab in you zeroheight pages where
+  # Storybook content will be automatically added.
+  # For example, "Code".
+  tab: "Code"
