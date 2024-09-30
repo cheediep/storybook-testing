@@ -23,26 +23,18 @@ export default {
 export const Primary = {
   args: {
     primary: true,
-    label: 'Primary Button!?',
+    label: 'Primary Button',
   },
 };
 
 export const Secondary = {
   args: {
-    label: 'Secondary Button!!',
+    label: 'Secondary Button',
   },
 };
 
-export const Large = {
+export const Tertiary = {
   args: {
-    size: 'large',
-    label: 'Large Button',
-  },
-};
-
-export const Small = {
-  args: {
-    size: 'small',
-    label: 'Small Button',
+    label: 'Tertiary Button',
   },
 };
